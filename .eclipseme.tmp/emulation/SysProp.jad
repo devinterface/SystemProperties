@@ -1,0 +1,8 @@
+MIDlet-1: SystemProperties,,com.devinterface.phone.SysProperties.SystemProperties
+MIDlet-Jar-Size: 21677
+MIDlet-Jar-URL: SysProp.jar
+MIDlet-Name: SysProp Midlet Suite
+MIDlet-Vendor: Midlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
