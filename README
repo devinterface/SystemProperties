@@ -1,0 +1,53 @@
+h1(#id). SystemProperties
+
+SystemProperties is a J2ME Midlet that shows system information on Nokia S60v5 based phones.
+
+h2(#id). How to configure Eclipse IDE for Nokia S60 applications developing
+* *Software Required*
+** Windows based system
+** a Java SE (Standard Edition) Development Kit (JDK)
+*** JDK 6 Update 12 reccomended
+** A windows version of Pearl, such as Strawberry Pearl or others (reccomended as a Nokia SDK prerequisite)
+** the Eclipse IDE (v3.3 or higher)
+** "Nokia SymbianOS/S60 5th Edition SDK v1.0":http://www.forum.nokia.com/info/sw.nokia.com/id/ec866fab-4b76-49f6-b5a5-af0631419e9c/S60_All_in_One_SDKs.html
+** "the EclipseME plugin for Eclipse v1.7.9":http://sourceforge.net/project/showfiles.php?group_id=86829
+** "Java ME Developer's Library v3.1":http://www.forum.nokia.com/info/sw.nokia.com/id/3cfc525e-f0ec-491c-badd-085c0e2df8bf/Java_ME_Developers_Library.html
+* *Prepare the Nokia developing IDE*
+** Install required tools
+*** Install Java JDK
+*** Install Perl
+*** Install Nokia S60 5th Edition SDK v1.0 in C:\S60\devices\S60_5th_Edition_SDK_v1.0 path
+*** Install Sun Java Wireless Toolkit in C:\WTK2.5.2_01
+** The Eclipse IDE
+*** Extract Eclipse zip file in the disk location that you want
+*** Start Eclipse. When asked for a workspace directory to use, give a directory to be used as you Eclipse workspace directory, such as C:\myPath\eclipse_workspace\, or accept the default
+** EclipseME Plugin
+*** Select the menu item Help -> Software Updates -> Find and Install (Help -> install New Software in Eclipse 3.5)
+*** Select the radio button: Search for new features to install and press Next
+*** Press the button New Archived Site. In the file selection dialog that appears, select the EclipseME installation file you downloaded, eclipseme.feature_1.7.9_site.zip
+*** In the previous dialog, make sure the eclipseme.feature_1.7.9_site.zip  checkbox is the only one selected, and press Finish
+*** Select the eclipseme.feature_1.7.9_site.zip  checkbox and press Next
+*** Select the I accept the terms in the license agreement radio button, and press Next
+*** Press Install
+*** Press Yes to restart Eclipse, and select the previously workspace
+** Configure EclipseME
+*** Select the menu item Window -> Preferences
+*** Expand J2ME point and select Device Management
+*** In the settings section of the dialog, press Import
+*** In the dialog opened, browse for the directory C:\S60\devices\S60_5th_Edition_SDK_v1.0  Click Refresh
+*** Check the S60Emulator  and S60Device  devices' checkboxes. Press Finish
+*** Back in the main dialog, select S60Emulator as the default device
+*** Click OK
+** Configure Eclipse's Java options
+*** In Eclipse, select the menu item Window -> Preferences
+*** Expand node Java -> Build Path
+*** Expand node Java -> Debug
+*** Uncheck Suspend execution on uncaught exceptions
+*** Uncheck Suspend execution on compilation errors
+*** Set Debugger timeout (ms) to 60000
+*** Press OK
+** Java ME Developer's Library plug-in
+*** Close Eclipse
+*** Unzip the file Java_ME_Developers_Library_v3_1_eclipse_plugin.zip  you downloaded
+*** Copy the unzipped file Java_Developers_Library_3.1.0.jar  into plugins  folder in your Eclipse installation directory
+*** Start Eclipse. If you select Help | Help Contents in the menu items, you can see the Java ME Developer's Library as the node JavaTM ME Developer's Library 3.1
